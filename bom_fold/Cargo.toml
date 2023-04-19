@@ -1,0 +1,15 @@
+[package]
+name = "bom_fold"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[dependencies]
+clap.workspace = true
+xlsxwriter = { workspace = true, features = ["no-md5"] }
+serde = { workspace = true, features = ["derive"] }
+error = { workspace = true, features = ["csv"] }
+csv.workspace = true
+
+[dev-dependencies]
+pretty_assertions.workspace = true

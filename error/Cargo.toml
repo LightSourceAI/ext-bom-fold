@@ -1,0 +1,22 @@
+[package]
+edition = "2021"
+rust-version.workspace = true
+name = "error"
+publish = false
+version = "0.1.0"
+
+[features]
+csv = ["dep:csv"]
+
+[dependencies]
+backtrace.workspace = true
+bytes.workspace = true
+chrono.workspace = true
+prost.workspace = true
+prost-types.workspace = true
+time.workspace = true
+csv = { workspace = true, optional = true }
+tracing.workspace = true
+
+[build-dependencies]
+prost-build.workspace = true
